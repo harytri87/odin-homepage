@@ -67,6 +67,12 @@ body {
 }
 
 /* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* prettier-ignore */
 p, h1, h2, h3 {
   overflow-wrap: break-word;
 }
@@ -88,13 +94,14 @@ h1, h2, h3 {
 }
 /* CSS Reset end */
 
+/* general style */
 body {
   font-family: Roboto, system-ui;
 }
 /* prettier-ignore */
 h1, h2, h3 {
   font-family: "Playfair Display", system-ui;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-title);
 }
 
@@ -110,19 +117,19 @@ section {
   /* display: flex;
   align-items: center;
   min-height: 100dvh; */
+  display: grid;
+  grid-template-columns: 1fr min(1280px, 100%) 1fr;
   border: 1px solid red;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr min(1280px, 100%) 1fr;
-}
-
-.wrapper > * {
   grid-column: 2;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
+  border: 1px solid orange;
 }
+/* general style end */
 
+/* profile style */
 .profile {
   background: #0891b2;
   background: linear-gradient(
@@ -133,11 +140,15 @@ section {
   );
 }
 
+.profile > .wrapper {
+  padding: 0 3rem;
+}
+
 .profile-card {
   position: relative;
   background: #fff;
   padding: 2rem;
-  margin: 6rem;
+  margin: 5rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -145,18 +156,18 @@ section {
   position: relative;
   float: left;
   width: 48%;
-  margin: -4rem 2rem -6rem -2rem;
+  margin: -4rem 1.5rem -6rem -2rem;
 }
 
 .profile-img img {
-  width: 100%;
-  object-fit: cover;
+  /* width: 100%;
+  object-fit: cover; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .in-picture {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0rem;
   width: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.25);
@@ -175,8 +186,8 @@ section {
   color: var(--color-secondary);
 }
 
-.profile-card > h2 {
-  margin-bottom: 1.5rem;
+.profile-card > p {
+  margin: 1.5rem 0;
 }
 
 .socials {
@@ -189,7 +200,62 @@ section {
   width: 2rem;
 }
 
-.socials svg {
-  width: 100%;
-  vertical-align: middle;
+.socials > a:not(:last-child) {
+  margin-right: 0.5rem;
 }
+/* profile style end */
+
+/* work style */
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  row-gap: 2.5rem;
+  column-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 0.75;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0.5rem 1rem;
+  min-height: 10rem;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-head > h3 {
+  font-size: 1.25rem;
+}
+
+.card-head .links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-head a {
+  display: inline-block;
+  height: 1.5rem;
+}
+
+.card-head img {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+/* work style end */
