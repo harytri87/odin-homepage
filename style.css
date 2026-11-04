@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-VariableFont_wght-latin.woff2")
+    format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Italic-VariableFont_wght-latin.woff2")
+    format("woff2");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-VariableFont_wdthwght-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Italic-VariableFont_wdthwght-latin.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bg-color: #0891b2;
+  --color-title: #060b04;
+  --color-primary: #575655;
+  --color-secondary: #ffffff;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+
+  Ga semua, yg butuh aja.
+*/
+
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* prettier-ignore */
+p, h1, h2, h3 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+/* prettier-ignore */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+/* CSS Reset end */
+
+/* initial testing */
+.playfair {
+  font-family: "Playfair Display", system-ui;
+  font-weight: 500;
+  color: var(--bg-color);
+}
+
+.playfair-italic {
+  font-family: "Playfair Display", system-ui;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+.roboto {
+  font-family: Roboto, system-ui;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+.roboto-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-title);
+}
