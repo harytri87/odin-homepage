@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage | Odin</title>
+    <title>Dove the Bird | Odin</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <section class="profile">
+      <section class="profile" aria-labelledby="profile-title">
         <div class="wrapper">
           <div class="profile-card">
             <div class="profile-hero">
-              <h1>Dove the Bird</h1>
+              <h1 id="profile-title">Dove the Bird</h1>
               <picture>
                 <source
                   media="(max-width: 512px)"
@@ -51,9 +51,9 @@
         </div>
       </section>
 
-      <section class="work">
+      <section class="work" aria-labelledby="work-title">
         <div class="wrapper">
-          <h2>My work</h2>
+          <h2 id="work-title">My work</h2>
 
           <div class="works">
             <article class="card">
@@ -209,10 +209,10 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" aria-labelledby="contact-title">
         <div class="wrapper">
           <div class="contact-info">
-            <h2>Contact me</h2>
+            <h2 id="contact-title">Contact me</h2>
             <p>
               Please get in touch if you think our work could be mutually
               beneficial!
@@ -223,11 +223,13 @@
             <ul class="contact-list">
               <li>
                 <img src="./images/call.svg" alt="" />
-                555-555-5555
+                <a href="#tel:+15555555555">555-555-5555</a>
               </li>
               <li>
                 <img src="./images/mail.svg" alt="" />
-                dove.the.bird@example.test
+                <a href="#mailto:dove.the.bird@example.test"
+                  >dove.the.bird@example.test</a
+                >
               </li>
             </ul>
             <div class="socials">

@@ -4,6 +4,9 @@ Project from Advanced HTML and CSS Course on [The Odin Project](https://www.theo
 
 [Live preview here](https://harytri87.github.io/odin-homepage)
 
+Note:
+Not using Webpack for this. Kinda paranoid about npm invulnerability because I don't fully understand about npm and overall security yet.
+
 - - -
 
 Image credits:

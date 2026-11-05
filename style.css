@@ -235,13 +235,14 @@ section {
 
 .card-head .links {
   display: flex;
-  gap: 0.75rem;
+  margin: -0.5rem -0.5rem -0.5rem 0;
 }
 
 .card-head .links a {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
 }
 
 .card-head .links img {
@@ -287,6 +288,12 @@ section {
 .contact-list img {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.contact-list a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .contact .socials > a {
