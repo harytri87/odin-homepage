@@ -7,246 +7,251 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="profile">
-      <div class="wrapper">
-        <h1 class="outside">Dove the Bird</h1>
-        <div class="profile-card">
-          <picture class="profile-img">
-            <h1 class="in-picture">Dove the Bird</h1>
-            <source
-              media="(width <= 500px)"
-              srcset="./images/bg-biru-crop.webp"
-            />
-            <source media="(width > 500px)" srcset="./images/bg-biru.webp" />
-            <img src="./images/bg-biru.webp" alt="photo of Dove the Bird" />
-          </picture>
+    <main>
+      <section class="profile">
+        <div class="wrapper">
+          <div class="profile-card">
+            <div class="profile-hero">
+              <h1>Dove the Bird</h1>
+              <picture>
+                <source
+                  media="(max-width: 512px)"
+                  srcset="./images/bg-biru-crop.webp"
+                />
+                <img src="./images/bg-biru.webp" alt="Photo of Dove the Bird" />
+              </picture>
+            </div>
 
-          <h2>About me</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            eligendi voluptates eaque, fugiat dignissimos odit fugit omnis hic
-            placeat odio eius quis architecto at esse quas? Nulla molestias
-            voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Libero eveniet, nam excepturi illum quidem aliquid, architecto
-            reiciendis repellendus quas vitae iure molestias cumque placeat
-            officiis, nobis voluptas id quasi atque?
-          </p>
+            <div class="profile-text">
+              <h2>About me</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae eligendi voluptates eaque, fugiat dignissimos odit
+                fugit omnis hic placeat odio eius quis architecto at esse quas?
+                Nulla molestias voluptatem vero. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Libero eveniet, nam excepturi
+                illum quidem aliquid, architecto reiciendis repellendus quas
+                vitae iure molestias cumque placeat officiis, nobis voluptas id
+                quasi atque?
+              </p>
 
-          <div class="socials">
-            <a href="#" aria-label="Dove the Bird's github page">
-              <img src="./images/github.svg" alt="" />
-            </a>
-
-            <a href="#" aria-label="Dove the Bird's LinkedIn page">
-              <img src="./images/linkedin.svg" alt="" />
-            </a>
-
-            <a href="#" aria-label="Dove the Bird's X (twitter) page">
-              <img src="./images/twitter.svg" alt="" />
-            </a>
+              <div class="socials">
+                <a href="#" aria-label="Dove the Bird's GitHub page">
+                  <img src="./images/github.svg" alt="" />
+                </a>
+                <a href="#" aria-label="Dove the Bird's LinkedIn page">
+                  <img src="./images/linkedin.svg" alt="" />
+                </a>
+                <a href="#" aria-label="Dove the Bird's X (Twitter) page">
+                  <img src="./images/twitter.svg" alt="" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="work">
-      <div class="wrapper">
-        <h2>My Work</h2>
+      <section class="work">
+        <div class="wrapper">
+          <h2>My work</h2>
 
-        <div class="works">
-          <article class="card">
-            <img
-              src="./images/project-1.webp"
-              alt="Screenshot of Project One"
-            />
-            <div class="card-body">
-              <div class="card-head">
-                <h3>Project One</h3>
-                <div class="links">
-                  <a href="#" aria-label="Github repository of Project One">
-                    <img src="./images/github.svg" alt="" />
-                  </a>
-                  <a href="#" aria-label="Take a look at Project One">
-                    <img src="./images/external-link.svg" alt="" />
-                  </a>
+          <div class="works">
+            <article class="card">
+              <img
+                src="./images/project-1.webp"
+                alt="Screenshot of Project One"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="card-head">
+                  <h3>Project One</h3>
+                  <div class="links">
+                    <a href="#" aria-label="GitHub repository of Project One">
+                      <img src="./images/github.svg" alt="" />
+                    </a>
+                    <a href="#" aria-label="Take a look at Project One">
+                      <img src="./images/external-link.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
               </div>
-              <p>
-                Short description of the project. Just a couple sentences will
-                do.
-              </p>
-            </div>
-          </article>
+            </article>
 
-          <article class="card">
-            <img
-              src="./images/project-2.webp"
-              alt="Screenshot of Project Two"
-            />
-            <div class="card-body">
-              <div class="card-head">
-                <h3>Project Two</h3>
-                <div class="links">
-                  <a href="#" aria-label="Github repository of Project Two">
-                    <img src="./images/github.svg" alt="" />
-                  </a>
-                  <a href="#" aria-label="Take a look at Project Two">
-                    <img src="./images/external-link.svg" alt="" />
-                  </a>
+            <article class="card">
+              <img
+                src="./images/project-2.webp"
+                alt="Screenshot of Project Two"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="card-head">
+                  <h3>Project Two</h3>
+                  <div class="links">
+                    <a href="#" aria-label="GitHub repository of Project Two">
+                      <img src="./images/github.svg" alt="" />
+                    </a>
+                    <a href="#" aria-label="Take a look at Project Two">
+                      <img src="./images/external-link.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
               </div>
-              <p>
-                Short description of the project. Just a couple sentences will
-                do.
-              </p>
-            </div>
-          </article>
+            </article>
 
-          <article class="card">
-            <img
-              src="./images/project-3.webp"
-              alt="Screenshot of Project Three"
-            />
-            <div class="card-body">
-              <div class="card-head">
-                <h3>Project Three</h3>
-                <div class="links">
-                  <a href="#" aria-label="Github repository of Project Three">
-                    <img src="./images/github.svg" alt="" />
-                  </a>
-                  <a href="#" aria-label="Take a look at Project Three">
-                    <img src="./images/external-link.svg" alt="" />
-                  </a>
+            <article class="card">
+              <img
+                src="./images/project-3.webp"
+                alt="Screenshot of Project Three"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="card-head">
+                  <h3>Project Three</h3>
+                  <div class="links">
+                    <a href="#" aria-label="GitHub repository of Project Three">
+                      <img src="./images/github.svg" alt="" />
+                    </a>
+                    <a href="#" aria-label="Take a look at Project Three">
+                      <img src="./images/external-link.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
               </div>
-              <p>
-                Short description of the project. Just a couple sentences will
-                do.
-              </p>
-            </div>
-          </article>
+            </article>
 
-          <article class="card">
-            <img
-              src="./images/project-4.webp"
-              alt="Screenshot of Project Four"
-            />
-            <div class="card-body">
-              <div class="card-head">
-                <h3>Project Four</h3>
-                <div class="links">
-                  <a href="#" aria-label="Github repository of Project Four">
-                    <img src="./images/github.svg" alt="" />
-                  </a>
-                  <a href="#" aria-label="Take a look at Project Four">
-                    <img src="./images/external-link.svg" alt="" />
-                  </a>
+            <article class="card">
+              <img
+                src="./images/project-4.webp"
+                alt="Screenshot of Project Four"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="card-head">
+                  <h3>Project Four</h3>
+                  <div class="links">
+                    <a href="#" aria-label="GitHub repository of Project Four">
+                      <img src="./images/github.svg" alt="" />
+                    </a>
+                    <a href="#" aria-label="Take a look at Project Four">
+                      <img src="./images/external-link.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
               </div>
-              <p>
-                Short description of the project. Just a couple sentences will
-                do.
-              </p>
-            </div>
-          </article>
+            </article>
 
-          <article class="card">
-            <img
-              src="./images/project-5.webp"
-              alt="Screenshot of Project Five"
-            />
-            <div class="card-body">
-              <div class="card-head">
-                <h3>Project Five</h3>
-                <div class="links">
-                  <a href="#" aria-label="Github repository of Project Five">
-                    <img src="./images/github.svg" alt="" />
-                  </a>
-                  <a href="#" aria-label="Take a look at Project Five">
-                    <img src="./images/external-link.svg" alt="" />
-                  </a>
+            <article class="card">
+              <img
+                src="./images/project-5.webp"
+                alt="Screenshot of Project Five"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="card-head">
+                  <h3>Project Five</h3>
+                  <div class="links">
+                    <a href="#" aria-label="GitHub repository of Project Five">
+                      <img src="./images/github.svg" alt="" />
+                    </a>
+                    <a href="#" aria-label="Take a look at Project Five">
+                      <img src="./images/external-link.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
               </div>
-              <p>
-                Short description of the project. Just a couple sentences will
-                do.
-              </p>
-            </div>
-          </article>
+            </article>
 
-          <article class="card">
-            <img
-              src="./images/project-6.webp"
-              alt="Screenshot of Project Six"
-            />
-            <div class="card-body">
-              <div class="card-head">
-                <h3>Project Six</h3>
-                <div class="links">
-                  <a href="#" aria-label="Github repository of Project Six">
-                    <img src="./images/github.svg" alt="" />
-                  </a>
-                  <a href="#" aria-label="Take a look at Project Six">
-                    <img src="./images/external-link.svg" alt="" />
-                  </a>
+            <article class="card">
+              <img
+                src="./images/project-6.webp"
+                alt="Screenshot of Project Six"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="card-head">
+                  <h3>Project Six</h3>
+                  <div class="links">
+                    <a href="#" aria-label="GitHub repository of Project Six">
+                      <img src="./images/github.svg" alt="" />
+                    </a>
+                    <a href="#" aria-label="Take a look at Project Six">
+                      <img src="./images/external-link.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
               </div>
-              <p>
-                Short description of the project. Just a couple sentences will
-                do.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="wrapper">
-        <div class="contact-info">
-          <h2>Contact me</h2>
-          <p>
-            Please get in touch if you think our work could be mutually
-            beneficial!
-          </p>
-          <address>1234 Random Road<br />Random Town, California 12345</address>
-          <ul>
-            <li>
-              <img src="./images/call.svg" alt="" />
-              555-555-5555
-            </li>
-            <li>
-              <img src="./images/mail.svg" alt="" />
-              dove.the.bird@example.test
-            </li>
-          </ul>
-          <div class="socials">
-            <a href="#" aria-label="Dove the Bird's github page">
-              <img src="./images/github.svg" alt="" />
-            </a>
-
-            <a href="#" aria-label="Dove the Bird's LinkedIn page">
-              <img src="./images/linkedin.svg" alt="" />
-            </a>
-
-            <a href="#" aria-label="Dove the Bird's X (twitter) page">
-              <img src="./images/twitter.svg" alt="" />
-            </a>
+            </article>
           </div>
         </div>
+      </section>
 
-        <img
-          class="contact-img"
-          src="./images/bg-hijau.webp"
-          alt="Dove the Bird waiting for call"
-        />
-      </div>
+      <section class="contact">
+        <div class="wrapper">
+          <div class="contact-info">
+            <h2>Contact me</h2>
+            <p>
+              Please get in touch if you think our work could be mutually
+              beneficial!
+            </p>
+            <address>
+              1234 Random Road<br />Random Town, California 12345
+            </address>
+            <ul class="contact-list">
+              <li>
+                <img src="./images/call.svg" alt="" />
+                555-555-5555
+              </li>
+              <li>
+                <img src="./images/mail.svg" alt="" />
+                dove.the.bird@example.test
+              </li>
+            </ul>
+            <div class="socials">
+              <a href="#" aria-label="Dove the Bird's GitHub page">
+                <img src="./images/github.svg" alt="" />
+              </a>
+              <a href="#" aria-label="Dove the Bird's LinkedIn page">
+                <img src="./images/linkedin.svg" alt="" />
+              </a>
+              <a href="#" aria-label="Dove the Bird's X (Twitter) page">
+                <img src="./images/twitter.svg" alt="" />
+              </a>
+            </div>
+          </div>
 
-      <img
-        class="contact-img-full"
-        src="./images/bg-hijau.webp"
-        alt="Dove the Bird waiting for call"
-      />
-    </section>
+          <div class="contact-media">
+            <img
+              src="./images/bg-hijau.webp"
+              alt="Dove the Bird waiting for a call"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
